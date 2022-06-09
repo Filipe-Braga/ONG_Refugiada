@@ -1,0 +1,509 @@
+html, body {
+  background-color:#dcdfed;
+  height: 100%;
+  text-align: center;
+  margin: 0px;
+
+}
+
+.icon{
+  width:30%;
+}
+
+/* HOME */
+
+.nt{
+  text-decoration: underline;
+   text-shadow: 2px 2px black;
+  color:#ffbd07;
+  font-size:200%;
+}
+
+/* NAVEGAÇÂO */
+
+ul{
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  list-style-type: none;}
+
+header ul{
+  background-color: #5455a2;
+}
+
+header li{
+    float: left;
+}
+
+header li a{
+  font-size:30px;
+  text-align: center;
+  color: white;
+  display:block;
+  padding:14px 16px;
+  text-decoration: none;
+}
+
+header li a:hover{
+  background-color: #5362c6;
+}
+
+.tresB{
+  max-width:25px;
+  height: auto;
+}
+
+.active{
+  background-color: #5362c6;
+}
+
+.oculto{
+  display:none;
+}
+
+/* PAGINA INICIAL */
+
+.backIndex{
+  background-image:url("img/backWar2.webp");
+  background-repeat: no-repeat;
+  background-size:cover;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  height:280%;
+  width:auto;
+}
+
+.indexContainer{
+  margin:30% auto;
+  width:85%;
+  padding:1%;
+  top: 50%;
+  left: 48%;
+  margin-top:50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.WW{
+  font-size:100%;
+  margin:3%;
+  display:flex;
+  background-color:rgb(214, 203, 203, 0.8);
+  width: 100%;
+  height: auto;
+  border-radius:3%;
+}
+
+.WW img{
+  margin:2%;
+  object-fit:contain;
+  border-radius:5%;
+}
+
+#img1{
+  width:45%;
+}
+
+#img2{
+  width:35%;
+}
+
+#img3{
+  width:45%;
+}
+
+.WW p{
+  margin:0%;
+  padding: 10%;
+  text-decoration: none;
+  color: #232438;
+  text-align-last: center;
+  font-size: 200%;
+}
+
+/* CADASTRO */
+
+/* Não pode usar height e width em coisas depois da barra*/
+
+.backCad{
+  background-image:url("img/backWar.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height:100%;
+  width:auto;
+}
+
+.cadastro{
+  background:#525252;
+  margin:50px;
+  margin-left: auto;
+  margin-right: auto;
+  width:35%;
+  padding:30px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  background-color:rgb(214, 203, 203, 0.8);
+  color:#222d47;
+  border: 3px solid #222d47;
+  border-radius:10%;
+}
+
+input{
+  margin:5px;
+  padding:10px;
+  border-radius:10%;
+}
+
+/* LOGIN */
+
+.backLog{
+  background-image:url("img/backWar.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height:100%;
+  width:auto;
+}
+
+.log{
+  background:#525252;
+  margin:50px;
+  margin-left: auto;
+  margin-right: auto;
+  width:35%;
+  padding:30px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  background-color:rgb(214, 203, 203, 0.8);
+  color:#222d47;
+  border: 3px solid #222d47;
+  border-radius:10%;
+}
+
+/* LOGO */
+
+.logo img{ 
+  max-width:40px;
+  border-radius: 100%;
+}
+
+/* CONTATO FAKE */
+
+.backCon{
+  background-image:url("img/Hello2.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  height:150%;
+  width:auto;
+  background-position:center;
+}
+
+
+.conTitle{
+  margin:5%;
+  margin-left: auto;
+  margin-right: auto;
+  width:35%;
+  padding:8%;
+  left:24%;
+  top:1%;
+  position: absolute;
+  color:#f9fad9;
+  font-size:200%;
+}
+
+.conTitle h2{
+  font-size:125%;
+}
+
+.contato{
+  margin:0px;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  transform: translate(-50%, -50%);
+  top: 120%;
+  left: 50%;
+  position:absolute;
+  font-size:150%;
+  opacity:0.5;
+  border-radius:25%;
+  border:3px solid #222d47;
+  background:#f9fad9;
+}
+
+.contato ul{
+  margin:0px;
+  margin-left: auto;
+  margin-right: auto;
+  width:75%;
+  display:flex;
+  top: 100%;
+  left: 50%;
+  border-bottom:3px solid #222d47;
+}
+
+.contato li{
+  margin:5%;
+}
+
+.contato div:hover{
+  opacity:1;
+}
+
+/* Onde caem lagrimas */
+
+/*--------------------------------- IPAD MINI ---------------------------------*/
+
+@media (max-width: 920px){
+
+/* pag inicial */
+  
+  .indexContainer{
+    margin-top:70%;
+    width:80%;
+  }
+  
+  .WW{
+    font-size:80%;  
+    margin:3%;
+    display:block;
+  }
+
+/* Navegacao */
+
+  .logo img{ 
+    max-width:40px;
+  }
+
+  .tresB{
+    max-width:25px;
+    height: auto;
+  }
+
+  
+  header li a{
+    font-size:24px;
+    padding:14px 16px;
+  }
+
+/*  cadastro  */
+
+  .cadastro{
+    margin:0px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    height:40%;
+    padding:30px;
+  }
+
+  input{
+    font-size:120%;
+    margin:5px;
+    padding:10px;
+    border-radius:10%;
+  }
+
+/* Login */
+
+  .log{
+    font-size:130%;
+    margin:50px;
+    margin-left: auto;
+    margin-right: auto;
+    width:75%;
+    height:45%;
+    padding:30px;
+  }
+  
+  .log input{
+    margin:20px;
+  }
+
+/* Contato */
+
+  .conTitle{
+    margin:10%;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    padding:8%;
+    font-size:150%;
+    left:18%;
+  }
+
+  .contato{
+    margin:0px;
+    width:85%;
+    top: 70%;
+    left: 50%;
+    font-size:155%;
+  }
+
+  .backCon{
+    height:100%;
+    width:auto;
+    background-position:center;
+  }
+}
+
+/*--------------------------------- IPHONE SE ---------------------------------*/
+
+@media (max-width: 550px) {
+
+/* pag inicial */
+
+  .backIndex{
+  background-image:url("img/backWar2.webp");
+  background-repeat: no-repeat;
+  background-size:cover;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  height:185%;
+  width:auto;
+  }
+  
+  .indexContainer{
+    width:80%;
+    margin-top:90%;
+  }
+
+  .WW{
+    font-size:60%;
+    margin:3%;
+    display:block;
+  }
+
+.WW img{
+  margin:2%;
+  object-fit:contain;
+}
+
+  #img1{
+  width:80%;
+}
+
+#img2{
+  width:60%;
+}
+
+#img3{
+  width:80%;
+}
+
+/* Navegacao */
+
+  .logo img{ 
+    max-width:25px;
+  }
+
+  .tresB{
+    max-width:16px;
+    height: auto;
+  }
+  
+  header li a{
+    font-size:15px;
+    padding:10px 8px;
+  }
+
+/*  cadastro  */
+
+  .cadastro{
+    font-size:80%;
+    margin-left: 0px;
+    margin-right: 0px;
+    width:93%;
+    height:60%;
+    padding:10px;
+    border-radius:0%;
+  }
+
+  input{
+    font-size:80%;
+    margin:4px;
+    padding:10px;
+  }
+
+/* Login */
+
+  .log{
+    font-size:80%;
+    margin:50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width:93%;
+    height:40%;
+    padding:10px;
+    border-radius:0%;
+  }
+  
+  .log input{
+    font-size:80%;
+    margin:4px;
+    padding:10px;
+  }
+
+/* Contato */
+
+  .conTitle{
+    margin:10%;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    padding:8%;
+    font-size:100%;
+    left:18%;
+  }
+
+  .contato{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin:0px;
+    width:98%;
+    top: 70%;
+    left: 50%;
+    font-size:90%;
+    border-radius:0%;
+  }
+  
+  .backCon{
+    height:100%;
+    width:auto;
+  }
+}
+
+
+/*---------------------------------  ---------------------------------*/
+
+@media (max-width: 300px) {
+
+/* Contato */
+
+  .conTitle{
+    margin:10%;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    padding:8%;
+    font-size:100%;
+    left:18%;
+  }
+
+  .contato ul{
+    width:90%;
+  }
+  
+  .backCon{
+    height:100%;
+    width:auto;
+  }
+}
